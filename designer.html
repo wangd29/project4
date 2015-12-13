@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<style>
+	.img1{
+			margin-top:130px;
+			text-align: center;
+		 }
+	.img2{
+			margin-top:130px;
+			margin-left:210px;
+		 }
+	.img3{
+			margin-top:130px;
+			padding-left:500px;
+		 }
+	.img4{
+			margin-top:130px;
+			text-align: center;
+		 }
+	.img8{
+			margin-top:130px;
+			
+		 }
+	.img5{
+		    margin-top:130px;
+			text-align: center;
+
+	}
+
+		 </style>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>New In</title>
+
+	<link rel="stylesheet" type="text/css" href="css/farfetch.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$flag = 0 ; 
+		$(".mobile-menu-icon-wrapper").click(function(){
+			if ($flag == 0 ){
+				$(".nav-mobile-left-wrapper").css("display","block");
+				$(".nav-logo-wrapper").css("min-width","800px");
+				$flag = 1 ; 
+			}else{
+				$(".nav-mobile-left-wrapper").css("display","none");
+				$(".nav-logo-wrapper").css("min-width","400px");
+				$flag = 0 ; 
+			}
+		});
+
+		$(window).resize(function() {
+
+   			var width = $(this).width();
+
+   			if ( width > 1000 ){
+   				$(".nav-mobile-left-wrapper").css("display","none");
+   				$(".nav-logo-wrapper").css("min-width","1000px");
+   				$flag = 0 ; 
+   			}
+   			if ( width = 1000 ){
+   				$(".nav-logo-wrapper").css("min-width","400px");
+   				$flag = 0 ; 
+   			}
+    		// var height = $(this).height();
+		});
+
+	});
+
+
+
+	</script>
+</head>
+<body>
+
+<div class="nav-mobile-left-wrapper">
+	<ul>
+		<li><a href="newin.html">NEW IN</a></li>
+		<li><a href="newin.html">DESIGNER</a></li>
+		<li><a href="newin.html">SHOES</a></li>
+		<li><a href="newin.html">CLOTHING</a></li>
+		<li><a href="newin.html">BAGS</a></li>
+	</ul>
+</div>
+<div class="nav-left-wrapper">
+	
+	<ul>
+		<li><a href="newin.html">NEW IN</a></li>
+		<li><a href="newin.html">DESIGNER</a></li>
+		<li><a href="newin.html">SHOES</a></li>
+		<li><a href="newin.html">CLOTHING</a></li>
+		<li><a href="newin.html">BAGS</a></li>
+	</ul>
+
+</div>
+
+<div class="mobile-menu-icon-wrapper">
+	<i class="fa fa-bars fa-lg "></i>
+</div>
+
+<div class="nav-logo-wrapper">
+	<img src="img/farfetch.png" />
+</div>
+
+<div class="nav-right-wrapper">
+	
+	<ul>
+		<li>CUSTOMER</li>
+		<li>CARE</li>
+		<li>LOGIN</li>
+		<li>SHOPPING BAG</li>
+	</ul>
+
+</div>
+
+<div class="mobile-menu-right-icon-wrapper">
+	<i class="fa fa-reddit-alien fa-lg"></i>
+	<i class="fa fa-shopping-bag fa-lg"></i>
+</div>
+
+
+<div class="img1">
+	<img src="img/1.png"  width="80%">
+</div>
+<div class="img2">
+	<img src="img/2.png"  width="50%">
+</div>
+<div class="img3">
+	<img src="img/3.png"  width="70%">
+</div>
+<div class="img4">
+	<img src="img/4.png"  width="60%">
+</div>
+<div class="img8">
+		<img src="img/8.png"  width="100%">
+</div>
+<div class="img5">
+<img src="img/5.png"  width="30%">
+<img src="img/6.png"  width="30%">
+<img src="img/7.png"  width="30%">
+</div>
+
+
+	
+</body>
+</html>
